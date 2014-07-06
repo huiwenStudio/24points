@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> Start </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="initial-scale=1,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+		<link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+		<link href="files/resources/lib/jquerymobile/1.4.0/jquery.mobile.structure-1.4.0.css"
+		rel="stylesheet" />
+
+		<link href="media.css" rel="stylesheet" />
+
+<script type="text/javascript" name="baidu-tc-cerfication" src="http://apps.bdimg.com/cloudaapi/lightapp.js#d4e372e0030213cb65e7f1168c870901"></script> <script type="text/javascript">window.bd && bd._qdc && bd._qdc.init({app_id: '67b87e0e221eef2bed34e442'});</script>
+		<script type="text/javascript" src="files/resources/lib/store/json2.js"></script>
+		<script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js"></script>
+		<script type="text/javascript">
+			$(document).bind("mobileinit", function() {
+
+				if (navigator.userAgent.toLowerCase().indexOf("android") != -1) {
+					$.mobile.defaultPageTransition = 'none';
+					$.mobile.defaultDialogTransition = 'none';
+				}
+				if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+					$.mobile.allowCrossDomainPages = true;
+					$.support.cors = true;
+				}
+
+			});
+
+		</script>
+
+		<script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.0/jquery.mobile-1.4.0.js"></script>
+		<script type="text/javascript" src="files/resources/js/mobilebase.js"></script>
+		<script type="text/javascript" src="files/resources/lib/event/customEventHandler.js"></script>
+		<script type="text/javascript" src="files/resources/lib/base/sha1.js"></script>
+		<script type="text/javascript" src="files/resources/lib/base/oauth.js"></script>
+		<script type="text/javascript" src="files/resources/lib/base/contexts.js"></script>
+		<script type="text/javascript" src="files/resources/lib/base/jsonpath.js"></script>
+		<script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js"></script>
+		<script type="text/javascript" src="files/resources/lib/base/appery.js"></script>
+		<script type="text/javascript" src="files/resources/lib/get_target_platform.js"></script>
+		<script type="text/javascript" src="files/resources/lib/cordova.js"></script>
+		<link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+		/>
+		<script type="text/javascript" src="files/views/assets/js/services/service.js"></script>
+	</head>
+
+	<body >
+		<script language="JavaScript" type="text/javascript">
+			if (navigator.userAgent.match(/iP/i)) {
+				$(window).bind('orientationchange', function(event) {
+					$('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+				}).trigger('orientationchange');
+			}
+		</script>
+		<audio id="myaudio" src="skin.wav" controls="controls"  hidden="true"  preload="auto"></audio>
+		<div data-role="page" style="min-height:480px;" id="startScreen"
+		class="type-interior" data-theme="f">
+			<!-- mobileheader1 -->
+			<div data-role="header" data-position="fixed" data-theme="f"  id="startScreen_mobileheader1" class="startScreen_mobileheader1">
+				<h1 id="timer"> 24PT</h1>
+				<!-- mobilebutton_133 -->
+				<a id="pass" data-role="button"  class="startScreen_mobilebutton_133 ui-btn-left"data-corners="true" data-icon="none" data-iconpos='nowhere'
+				data-mini='true' data-theme="f" >
+					&nbsp;
+				</a>
+				<!-- mobilebutton_144 -->
+				<a id="score" data-role="button" class="startScreen_mobilebutton_144 ui-btn-right"
+				id="startScreen_mobilebutton_144" data-corners="true" data-icon="none" data-iconpos='nowhere'
+				data-inline='true' data-mini='true' data-theme="f" >
+					&nbsp;
+				</a>
+
+			</div>
+			<!-- mobilecontainer1 -->
+			<div data-role="content" style="background-color: #F5F5F5" id="startScreen_mobilecontainer1" class="startScreen_mobilecontainer1 ui-content"  data-theme="a">
+				<link href="startScreen.css" rel="stylesheet" type="text/css" />
+
+				<table  class="startScreen_mobilegrid_174" >
+                     	<col  id = "col1" style="width:25%;" />
+						<col  id = "col2" style="width:auto;" />
+						<col  id = "col3" style="width:25%;" /> 
+					<tr id="tr1">
+
+						<td id="td1" align="center">
+						<section id="sectionleft1"   style="width:100%">
+							<iframe name="left1" src="left1.html"scrolling="no"
+							frameborder="0" width="320px"height="320px"></iframe>
+						</section>
+						<section id="sectionleft2" style="width:100%">
+							<iframe name="left2" src="right1.html"scrolling="no"
+							frameborder="0" width="320px"height="320px"></iframe>
+						</section></td>
+						<td id="td2"align="center">
+						<section id="sectioncenter1" class="widget">
+							<!-- mobilegrid_174 -->
+							<div class="startScreen_mobilegrid_174_wrapper">
+								<table id="startScreen_mobilegrid_174" class="startScreen_mobilegrid_174" dsid="mobilegrid_174"
+								name="mobilegrid_174" cellpadding=0 cellspacing=0>
+									<col style="width:35px;" />
+									<col style="width:35px;" />
+									<col style="width:36px;" />
+									<col style="width:36px;" />
+									<col style="width:auto;" />
+									<tr class="startScreen_mobilegrid_174_row_0">
+										<!-- mobilegridcell_175 -->
+										<td id="startScreen_mobilegridcell_175"  class="startScreen_mobilegridcell_175"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_158 -->
+											<a data-role="button"class="startScreen_mobilebutton_158"
+											style='min-height:20px; ' id="star1" data-corners="false"
+											data-icon="star" data-iconpos="notext" data-mini="false" data-theme="g">
+												&nbsp;
+											</a>
+										</div></td>
+										<!-- mobilegridcell_176 -->
+										<td id="startScreen_mobilegridcell_176"  class="startScreen_mobilegridcell_176"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_157 -->
+											<a data-role="button"class="startScreen_mobilebutton_157"
+											style='min-height:20px; ' id="star2" data-corners="false"
+											data-icon="star" data-iconpos="notext" data-mini="false" data-theme="g" >
+												&nbsp;
+											</a>
+										</div></td>
+										<!-- mobilegridcell_179 -->
+										<td id="startScreen_mobilegridcell_179" class="startScreen_mobilegridcell_179"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_159 -->
+											<a data-role="button"  class="startScreen_mobilebutton_159"
+											style='min-height:20px; ' id="star3" data-corners="false"
+											data-icon="star" data-iconpos="notext" data-mini="false" data-theme="g" >
+												&nbsp;
+											</a>
+										</div></td>
+										<!-- mobilegridcell_180 -->
+										<td id="startScreen_mobilegridcell_180" class="startScreen_mobilegridcell_180"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_156 -->
+											<a data-role="button"  class="startScreen_mobilebutton_156"
+											style='min-height:20px; ' id="star4" data-corners="false"
+											data-icon="star" data-iconpos="notext" data-mini="false" data-theme="g" >
+												&nbsp;
+											</a>
+										</div></td>
+										<!-- mobilegridcell_181 -->
+										<td id="startScreen_mobilegridcell_181"  class="startScreen_mobilegridcell_181"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_182 -->
+											<a data-role="button"class="startScreen_mobilebutton_182"
+											style='min-height:20px; ' id="star5" data-corners="false"
+											data-icon="star" data-iconpos="notext" data-mini="false" data-theme="g" >
+												&nbsp;
+											</a>
+										</div></td>
+									</tr>
+								</table>
+							</div>
+							<!-- mobilegrid_4 -->
+							<div class="startScreen_mobilegrid_4_wrapper">
+								<table id="startScreen_mobilegrid_4" class="startScreen_mobilegrid_4"cellpadding=0 cellspacing=0>
+									<col style="width:auto;" />
+									<col style="width:auto;" />
+									<col style="width:auto;" />
+									<col style="width:auto;" />
+									<tr class="startScreen_mobilegrid_4_row_0">
+										<!-- mobilegridcell_5 -->
+										<td id="startScreen_mobilegridcell_5"  class="startScreen_mobilegridcell_5"colspan=1 rowspan=1>
+										<div class="cell-wrapper" align="center">
+											<!-- mobileimage_11 -->
+											<img class="startScreen_mobileimage_11" src="img/cover.png"id="poker1" onclick = "clickpoker1()"  />
+										</div></td>
+										<!-- mobilegridcell_6 -->
+										<td id="startScreen_mobilegridcell_6"  class="startScreen_mobilegridcell_6"colspan=1 rowspan=1>
+										<div class="cell-wrapper" align="center">
+											<!-- mobileimage_12 -->
+											<img class="startScreen_mobileimage_12" src="img/cover.png"id="poker2" onclick = "clickpoker2()"  />
+										</div></td>
+										<!-- mobilegridcell_9 -->
+										<td id="startScreen_mobilegridcell_9" class="startScreen_mobilegridcell_9"colspan=1 rowspan=1>
+										<div class="cell-wrapper"align="center">
+											<!-- mobileimage_13 -->
+											<img class="startScreen_mobileimage_13" src="img/cover.png"id="poker3" onclick = "clickpoker3()" />
+										</div></td>
+										<!-- mobilegridcell_10 -->
+										<td id="startScreen_mobilegridcell_10"  class="startScreen_mobilegridcell_10"colspan=1 rowspan=1>
+										<div class="cell-wrapper" align="center">
+											<!-- mobileimage_14 -->
+											<img class="startScreen_mobileimage_14" src="img/cover.png" id="poker4" onclick = "clickpoker4()"  />
+										</div></td>
+									</tr>
+								</table>
+							</div>
+							<!-- mobilegrid_93 -->
+							<div class="startScreen_mobilegrid_93_wrapper">
+								<table id="startScreen_mobilegrid_93" class="startScreen_mobilegrid_93"  cellspacing=0>
+									<col style="width:40px;" />
+									<col style="width:30px;" />
+									<col style="width:40px;" />
+									<col style="width:25px;" />
+									<col style="width:40px;" />
+									<tr class="startScreen_mobilegrid_93_row_0">
+										<!-- mobilegridcell_94 -->
+										<td id="startScreen_mobilegridcell_94"class="startScreen_mobilegridcell_94"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_109 -->
+											<a data-role="button" class="startScreen_mobilebutton_109"
+											id="number1" onclick = "clicknumber1()"data-corners="false" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a">
+												&nbsp;
+											</a>
+										</div></td>
+										<!-- mobilegridcell_95 -->
+										<td id="startScreen_mobilegridcell_95" class="startScreen_mobilegridcell_95"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_110 -->
+											<a data-role="button" class="startScreen_mobilebutton_110"
+											id="oper1" onclick = "clickoper1()" data-corners="false" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a" >
+												&nbsp;
+											</a>
+										</div></td>
+										<!-- mobilegridcell_100 -->
+										<td id="startScreen_mobilegridcell_100" class="startScreen_mobilegridcell_100"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_111 -->
+											<a data-role="button" class="startScreen_mobilebutton_111"
+											id="number2"  onclick = "clicknumber2()" data-corners="false" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a" >
+												&nbsp;
+											</a>
+										</div></td>
+										<!-- mobilegridcell_101 -->
+										<td id="startScreen_mobilegridcell_101"  class="startScreen_mobilegridcell_101"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_112 -->
+											<a data-role="button"  class="startScreen_mobilebutton_112" data-corners="false" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="c" >
+												=
+											</a>
+										</div></td>
+										<!-- mobilegridcell_102 -->
+										<td id="startScreen_mobilegridcell_102" class="startScreen_mobilegridcell_102"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_113 -->
+											<a data-role="button"  class="startScreen_mobilebutton_113"id="answer1" data-corners="false" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a" >
+												?
+											</a>
+										</div></td>
+									</tr>
+									<tr class="startScreen_mobilegrid_93_row_1">
+										<!-- mobilegridcell_96 -->
+										<td id="startScreen_mobilegridcell_96"  class="startScreen_mobilegridcell_96"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_114 -->
+											<a data-role="button" class="startScreen_mobilebutton_114"
+											id="number3" onclick="clicknumber3()" data-corners="false" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a" >
+												&nbsp;
+											</a>
+										</div></td>
+										<!-- mobilegridcell_97 -->
+										<td id="startScreen_mobilegridcell_97"  class="startScreen_mobilegridcell_97"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_115 -->
+											<a data-role="button" class="startScreen_mobilebutton_115"
+											id="oper2" onclick="clickoper2()" data-corners="false"data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a" >
+												&nbsp;
+											</a>
+										</div></td>
+										<!-- mobilegridcell_103 -->
+										<td id="startScreen_mobilegridcell_103"  class="startScreen_mobilegridcell_103"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_116 -->
+											<a data-role="button" class="startScreen_mobilebutton_116"
+											id="number4" onclick="clicknumber4()" data-corners="false" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a" >
+												&nbsp;
+											</a>
+										</div></td>
+										<!-- mobilegridcell_104 -->
+										<td id="startScreen_mobilegridcell_104" class="startScreen_mobilegridcell_104"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_117 -->
+											<a data-role="button"class="startScreen_mobilebutton_117"
+											id="startScreen_mobilebutton_117" data-corners="false" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="c" >
+												=
+											</a>
+										</div></td>
+										<!-- mobilegridcell_105 -->
+										<td id="startScreen_mobilegridcell_105" class="startScreen_mobilegridcell_105"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_118 -->
+											<a data-role="button"class="startScreen_mobilebutton_118"
+											id="answer2" data-corners="false" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a" >
+												?
+											</a>
+										</div></td>
+									</tr>
+									<tr class="startScreen_mobilegrid_93_row_2">
+										<!-- mobilegridcell_98 -->
+										<td id="startScreen_mobilegridcell_98"  class="startScreen_mobilegridcell_98"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_121 -->
+											<a data-role="button" class="startScreen_mobilebutton_121"
+											id="number5" onclick="clicknumber5()"data-corners="false" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a" >
+												&nbsp;
+											</a>
+										</div></td>
+										<!-- mobilegridcell_99 -->
+										<td id="startScreen_mobilegridcell_99" class="startScreen_mobilegridcell_99"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_122 -->
+											<a data-role="button" class="startScreen_mobilebutton_122"
+											id="oper3" onclick="clickoper3()" data-corners="false" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a" >
+												&nbsp;
+											</a>
+										</div></td>
+										<!-- mobilegridcell_106 -->
+										<td id="startScreen_mobilegridcell_106" class="startScreen_mobilegridcell_106"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_123 -->
+											<a data-role="button" class="startScreen_mobilebutton_123"
+											id="number6" onclick="clicknumber6()" data-corners="false"data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a">
+												&nbsp;
+											</a>
+										</div></td>
+										<!-- mobilegridcell_107 -->
+										<td id="startScreen_mobilegridcell_107"class="startScreen_mobilegridcell_107"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_124 -->
+											<a data-role="button" class="startScreen_mobilebutton_124"
+											id="startScreen_mobilebutton_124" data-corners="false" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="c" >
+												=
+											</a>
+										</div></td>
+										<!-- mobilegridcell_108 -->
+										<td id="startScreen_mobilegridcell_108" class="startScreen_mobilegridcell_108"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_125 -->
+											<a data-role="button"  class="startScreen_mobilebutton_125"
+											id="answer3" data-corners="false" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a">
+												?
+											</a>
+										</div></td>
+									</tr>
+								</table>
+							</div>
+							<!-- mobilegrid_80 -->
+							<div class="startScreen_mobilegrid_80_wrapper">
+								<table id="startScreen_mobilegrid_80" class="startScreen_mobilegrid_80" cellpadding=0 cellspacing=0>
+									<col style="width:auto;" />
+									<col style="width:auto;" />
+									<col style="width:auto;" />
+									<col style="width:auto;" />
+									<tr class="startScreen_mobilegrid_80_row_0">
+										<!-- mobilegridcell_81 -->
+										<td id="startScreen_mobilegridcell_81" class="startScreen_mobilegridcell_81"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_89 -->
+											<a data-role="button" class="startScreen_mobilebutton_89"
+											id="innum1"  data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a" >
+												&nbsp;
+											</a>
+										</div></td>
+										<!-- mobilegridcell_82 -->
+										<td id="startScreen_mobilegridcell_82"  class="startScreen_mobilegridcell_82"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_90 -->
+											<a data-role="button" class="startScreen_mobilebutton_90"
+											id="innum2" data-corners="true" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a" >
+												&nbsp;
+											</a>
+										</div></td>
+										<!-- mobilegridcell_85 -->
+										<td id="startScreen_mobilegridcell_85" class="startScreen_mobilegridcell_85"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_91 -->
+											<a data-role="button" class="startScreen_mobilebutton_91"
+											id="innum3"  data-corners="true" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a" >
+												&nbsp;
+											</a>
+										</div></td>
+										<!-- mobilegridcell_86 -->
+										<td id="startScreen_mobilegridcell_86"class="startScreen_mobilegridcell_86"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_92 -->
+											<a data-role="button" class="startScreen_mobilebutton_92"
+											id="innum4"  data-corners="true" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a" >
+												&nbsp;
+											</a>
+										</div></td>
+									</tr>
+									<tr class="startScreen_mobilegrid_80_row_1">
+										<!-- mobilegridcell_83 -->
+										<td id="startScreen_mobilegridcell_83" class="startScreen_mobilegridcell_83"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_69 -->
+											<a data-role="button"  class="startScreen_mobilebutton_69"
+											id="inopr1" onclick="clickinopr1()" data-corners="true" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a" >
+												+
+											</a>
+										</div></td>
+										<!-- mobilegridcell_84 -->
+										<td id="startScreen_mobilegridcell_84"class="startScreen_mobilegridcell_84"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_70 -->
+											<a data-role="button"class="startScreen_mobilebutton_70"
+											id="inopr2" onclick="clickinopr2()" data-corners="true" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a" >
+												—
+											</a>
+										</div></td>
+										<!-- mobilegridcell_87 -->
+										<td id="startScreen_mobilegridcell_87"  class="startScreen_mobilegridcell_87"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_71 -->
+											<a data-role="button"class="startScreen_mobilebutton_71"
+											id="inopr3" onclick="clickinopr3()" data-corners="true" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a" >
+												×
+											</a>
+										</div></td>
+										<!-- mobilegridcell_88 -->
+										<td id="startScreen_mobilegridcell_88" class="startScreen_mobilegridcell_88"colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilebutton_72 -->
+											<a data-role="button" class="startScreen_mobilebutton_72"
+											id="inopr4" onclick="clickinopr4()" data-corners="true" data-icon="none" data-iconpos='nowhere'
+											data-mini="false" data-theme="a" >
+												÷
+											</a>
+										</div></td>
+									</tr>
+								</table>
+							</div>
+
+						</section></td>
+
+						<td id="td3"align="center">
+						<section id="sectionright" >
+							<iframe name="right1"  src="right1.html"scrolling="no"
+							frameborder="0" width="320"height="320"></iframe>
+						</section></td>
+					</tr>
+					<tr id="tr2">
+						<td id="td4"align="center"></td>
+						<td id="td5"align="center">
+						<!-- <section id="sectiondown1"  >
+							<iframe name="down1" src="right1.html"scrolling="no"
+							frameborder="0" width="320"height="320"></iframe>
+
+						</section> -->
+						<section id="sectiondown2" >
+							<iframe name="down2" src="down2.html"scrolling="no"
+							frameborder="0" width="620"height="320"></iframe>
+
+						</section></td>
+						<td id="td6"align="center"></td>
+					</tr>
+				</table>
+			</div>
+			<!-- mobilefooter1 -->
+			<div data-role="footer"  class="startScreen_mobilefooter1"
+			id="startScreen_mobilefooter1" data-theme="f" data-position="fixed">
+				<!-- mobilenavbar_138 -->
+				<div data-role="navbar" id="startScreen_mobilenavbar_138"
+				class="startScreen_mobilenavbar_138" data-theme="f" style="position: relative;">
+					<ul>
+						<!-- mobilenavbaritem_140 -->
+						<li>
+							<a onclick="window.location.href='example.html';"data-theme="f" id="startScreen_mobilenavbaritem_140" >
+							 rule
+							</a>
+						</li>
+						<!-- mobilenavbaritem_141 -->
+						<li>
+							<a onclick="window.location.href='rank.html';"data-theme="f" id="startScreen_mobilenavbaritem_141" >
+							 rank
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script type="text/javascript" src="startScreen.js"></script>
+</html>

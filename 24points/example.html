@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Rule
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      	<meta name="viewport" content="initial-scale=1,user-scalable=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.0/jquery.mobile.structure-1.4.0.css"
+        rel="stylesheet" />
+        
+        <link href="media.css" rel="stylesheet" />
+        
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.0/jquery.mobile-1.4.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Screen1" id="Screen1" class="type-interior"
+        data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader" id="Screen1_mobileheader" class="Screen1_mobileheader">
+                <h1 dsid="mobileheader">
+                     24PT
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" style="background-color: #F5F5F5" id="Screen1_mobilecontainer" name="mobilecontainer" class="Screen1_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="b">
+                <link href="Screen2.css" rel="stylesheet" type="text/css" />
+               <table  class="startScreen_mobilegrid_174" >
+						<col  id = "col1" style="width:25%;" />
+						<col  id = "col2" style="width:auto" />
+						<col  id = "col3" style="width:25%;" />      
+						<tr id="tr1">
+							<td id="td1" align="center">
+								
+							<section id="sectionleft1"   style="width:100%">
+								<iframe name="left5" src="left5.html"scrolling="no" 
+								frameborder="0" width="320px"height="320px"></iframe>
+							</section>
+							<section id="sectionleft2" style="width:100%">
+							<iframe name="left6" src="right3.html"scrolling="no" 
+								frameborder="0" width="320px"height="320px"></iframe>
+							</section>
+							
+							</td>
+							<td id="td2"align="center">
+							<section id="sectioncenter1" class="widgetexample" >
+                <!-- mobilegrid_117 -->
+                <div class="Screen1_mobilegrid_117_wrapper">
+                    <table id="Screen1_mobilegrid_117" class="Screen1_mobilegrid_117" dsid="mobilegrid_117"
+                    name="mobilegrid_117" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="Screen1_mobilegrid_117_row_0">
+                            <!-- mobilegridcell_118 -->
+                            <td id="Screen1_mobilegridcell_118" name="mobilegridcell_118" class="Screen1_mobilegridcell_118"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper" align="center">
+                                    <!-- mobileimage_124 -->
+                                    <img class="Screen1_mobileimage_124" src="img/e2.png" width="320px" height="420px"
+                                    id="Screen1_mobileimage_124" dsid="mobileimage_124" name="mobileimage_124" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="Screen1_mobilegrid_117_row_1">
+                            <!-- mobilegridcell_120 -->
+                            <td id="Screen1_mobilegridcell_120" name="mobilegridcell_120" class="Screen1_mobilegridcell_120"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_122 -->
+                                    <div name="mobilelabel_122" id="Screen1_mobilelabel_122" dsid="mobilelabel_122"
+                                    data-role="appery_label" class="Screen1_mobilelabel_122">
+                                     rule
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="Screen1_mobilegrid_117_row_2">
+                            <!-- mobilegridcell_125 -->
+                            <td id="Screen1_mobilegridcell_125" name="mobilegridcell_125" class="Screen1_mobilegridcell_125"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_123 -->
+                                    <div name="mobilelabel_123" id="Screen1_mobilelabel_123" dsid="mobilelabel_123"
+                                    data-role="appery_label" class="Screen1_mobilelabel_123">
+                                    1、A ~ K represent number 1 ~ 13;
+                                     <br/> 
+                                    2、each number can be used once; 
+                                     <br/>
+                                    3、operaters:+、-、×、÷; 
+                                     <br/>
+                                   4、figure out 24 in 24 seconds.
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+            
+                         <tr class="Screen1_mobilegrid_117_row_1">
+                            <!-- mobilegridcell_120 -->
+                            <td id="Screen1_mobilegridcell_120" name="mobilegridcell_120" class="Screen1_mobilegridcell_120"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_122 -->
+                                    <div name="mobilelabel_122" id="Screen1_mobilelabel_122" dsid="mobilelabel_122"
+                                    data-role="appery_label" class="Screen1_mobilelabel_122" align="center">
+                                  <a href="#"    onclick="onclick=downloadFile('res/Pot24.apk')">  Android Learning Edition</a>  
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                         <tr class="Screen1_mobilegrid_117_row_1">
+                            <!-- mobilegridcell_120 -->
+                            <td id="Screen1_mobilegridcell_120" name="mobilegridcell_120" class="Screen1_mobilegridcell_120"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_122 -->
+                                    <div name="mobilelabel_122" id="Screen1_mobilelabel_122" dsid="mobilelabel_122"
+                                    data-role="appery_label" class="Screen1_mobilelabel_122">
+                                  <a href="#"   onclick="onclick=downloadFile('res/Pot25.apk')"> Android Challenge Edition </a>  
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                            <tr class="Screen1_mobilegrid_117_row_1">
+                            <!-- mobilegridcell_120 -->
+                            <td id="Screen1_mobilegridcell_120" name="mobilegridcell_120" class="Screen1_mobilegridcell_120"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_122 -->
+                                    <div name="mobilelabel_122" id="Screen1_mobilelabel_122" dsid="mobilelabel_122"
+                                    data-role="appery_label" class="Screen1_mobilelabel_122">
+                                  <a href="#"   onclick="onclick=downloadFile('res/Pot24.ipa')">  ios Challenge Edition</a>  
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+              </section>
+                            </td>
+
+				<td id="td3"align="center">
+				
+				<section id="sectionright" >
+						<iframe name="right3"  src="right3.html"scrolling="no"  
+						frameborder="0" width="320"height="320"></iframe>
+				</section>
+			</td>
+				</tr>
+				<tr id="tr2">
+				    <td id="td4"align="center"></td>
+				<td id="td5"align="center">
+					<section id="sectiondown1"  >
+					<iframe name="down5" src="right3.html"scrolling="no" 
+								frameborder="0" width="320"height="320"></iframe>
+
+					</section>
+					<section id="sectiondown2"  >
+						<iframe name="down6" src="down6.html"scrolling="no" 
+								frameborder="0" width="620"height="320"></iframe>
+						
+					</section>
+					</td>
+					<td id="td6"align="center"></td>
+				</tr>
+				</table>
+            <!-- mobilefooter -->
+            <div data-role="footer"  class="Screen1_mobilefooter" name="mobilefooter" data-position="fixed"
+            dsid="mobilefooter" id="Screen1_mobilefooter" data-theme="b">
+                <!-- mobilenavbar_108 -->
+                <div data-role="navbar" id="Screen1_mobilenavbar_108" name="mobilenavbar_108" dsid="mobilenavbar_108"
+                class="Screen1_mobilenavbar_108" data-theme="b" style="position: relative;">
+                    <ul>
+                        <!-- mobilenavbaritem_109 -->
+                        <li>
+                            <a onclick="window.location.href='rank.html';" data-theme="b"   id="Screen1_mobilenavbaritem_109"
+                           >
+                           rank
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_111 -->
+                        <li>
+                            <a onclick="window.location.href='start.html';" data-theme="b"   id="Screen1_mobilenavbaritem_111"
+                         >
+                            start
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+ <script type="text/javascript" src="Screen2.js">  
+                </script>
+</html>

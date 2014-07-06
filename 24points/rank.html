@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> Rank </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+			<meta name="viewport" content="initial-scale=1,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+		<link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+		<link href="files/resources/lib/jquerymobile/1.4.0/jquery.mobile.structure-1.4.0.css"
+		rel="stylesheet" />
+
+		<link href="media.css" rel="stylesheet" />
+
+		<script type="text/javascript" src="files/resources/lib/store/json2.js"></script>
+		<script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js"></script>
+		<script type="text/javascript">
+			$(document).bind("mobileinit", function() {
+				if (navigator.userAgent.toLowerCase().indexOf("android") != -1) {
+					$.mobile.defaultPageTransition = 'none';
+					$.mobile.defaultDialogTransition = 'none';
+				}
+				if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+					$.mobile.allowCrossDomainPages = true;
+					$.support.cors = true;
+				}
+			});
+		</script>
+		<script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.0/jquery.mobile-1.4.0.js"></script>
+		<script type="text/javascript" src="files/resources/js/mobilebase.js"></script>
+		<script type="text/javascript" src="files/resources/lib/event/customEventHandler.js"></script>
+		<script type="text/javascript" src="files/resources/lib/base/sha1.js"></script>
+		<script type="text/javascript" src="files/resources/lib/base/oauth.js"></script>
+		<script type="text/javascript" src="files/resources/lib/base/contexts.js"></script>
+		<script type="text/javascript" src="files/resources/lib/base/jsonpath.js"></script>
+		<script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js"></script>
+		<script type="text/javascript" src="files/resources/lib/base/appery.js"></script>
+		<script type="text/javascript" src="files/resources/lib/get_target_platform.js"></script>
+		<script type="text/javascript" src="files/resources/lib/cordova.js"></script>
+		<link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+		/>
+		<script type="text/javascript" src="files/views/assets/js/services/service.js"></script>
+
+	</head>
+
+	<body>
+		<script language="JavaScript" type="text/javascript">
+			if (navigator.userAgent.match(/iP/i)) {
+				$(window).bind('orientationchange', function(event) {
+					$('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+				}).trigger('orientationchange');
+			}
+		</script>
+		<div data-role="page" style="min-height:480px;" dsid="Screen1" id="Screen1" class="type-interior"
+		data-theme="b">
+			<!-- mobileheader -->
+			<div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+			data-theme="d" name="mobileheader" id="Screen1_mobileheader" class="Screen1_mobileheader">
+				<h1 dsid="mobileheader"> 24PT </h1>
+			</div>
+			<!-- mobilecontainer -->
+			<div data-role="content" style="background-color: #F5F5F5"id="Screen1_mobilecontainer" name="mobilecontainer" class="Screen1_mobilecontainer ui-content"
+			dsid="mobilecontainer" data-theme="d">
+				<link href="Screen1.css" rel="stylesheet" type="text/css" />
+				<table  class="startScreen_mobilegrid_174" >
+					    <col  id = "col1" style="width:25%;" />
+						<col  id = "col2" style="width:auto;" />
+						<col  id = "col3" style="width:25%;" /> 
+					<tr id="tr1">
+						<td id="td1" align="center">
+						<section id="sectionleft1"  style="width:100%" >
+							<iframe name="left3" src="left5.html"scrolling="no"
+							frameborder="0" width="320px"height="320px"></iframe>
+						</section>
+						<section id="sectionleft2" style="width:100%">
+							<iframe name="left4" src="right2.html"scrolling="no"
+							frameborder="0" width="320px"height="320px"></iframe>
+						</section></td>
+						<td id="td2"align="center">
+						<section id="sectioncenter1" class="widgetrank">
+							<!-- mobilelabel_74 -->
+							<div name="mobilelabel_74" id="Screen1_mobilelabel_74" dsid="mobilelabel_74" data-role="appery_label"
+							class="Screen1_mobilelabel_74">
+								Top5
+							</div>
+							<!-- mobilegrid_16 -->
+							<div class="Screen1_mobilegrid_16_wrapper">
+							
+								<table id="Screen1_mobilegrid_16" class="Screen1_mobilegrid_16"
+								name="mobilegrid_16" cellpadding=0 cellspacing=0>
+									<col style="width:120px;" />
+									<col style="width:auto;" />
+									<tr class="Screen1_mobilegrid_16_row_0">
+										<!-- mobilegridcell_17 -->
+										<td id="Screen1_mobilegridcell_17" name="mobilegridcell_17" class="Screen1_mobilegridcell_17"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilelabel_86 -->
+											<div name="mobilelabel_86" id="Screen1_mobilelabel_86" dsid="mobilelabel_86" data-role="appery_label"
+											class="Screen1_mobilelabel_86">
+												Rank
+											</div>
+										</div></td>
+										<!-- mobilegridcell_44 -->
+										<td id="Screen1_mobilegridcell_44" name="mobilegridcell_44" class="Screen1_mobilegridcell_44"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilelabel_88 -->
+											<div name="mobilelabel_88" id="Screen1_mobilelabel_88" dsid="mobilelabel_88" data-role="appery_label"
+											class="Screen1_mobilelabel_88">
+												Score
+											</div>
+										</div></td>
+									</tr>
+									<tr class="Screen1_mobilegrid_16_row_1">
+										<!-- mobilegridcell_19 -->
+										<td id="Screen1_mobilegridcell_19" name="mobilegridcell_19" class="Screen1_mobilegridcell_19"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilelabel_75 -->
+											<div name="mobilelabel_75" id="Screen1_mobilelabel_75" dsid="mobilelabel_75" data-role="appery_label"
+											class="Screen1_mobilelabel_75">
+												1
+											</div>
+										</div></td>
+										<!-- mobilegridcell_47 -->
+										<td id="Screen1_mobilegridcell_47" name="mobilegridcell_47" class="Screen1_mobilegridcell_47"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilelabel_85 -->
+											<div name="mobilelabel_85" id="Rank1" dsid="mobilelabel_85" data-role="appery_label"
+											class="Screen1_mobilelabel_85">
+												&nbsp;
+											</div>
+										</div></td>
+									</tr>
+									<tr class="Screen1_mobilegrid_16_row_2">
+										<!-- mobilegridcell_36 -->
+										<td id="Screen1_mobilegridcell_36" name="mobilegridcell_36" class="Screen1_mobilegridcell_36"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilelabel_76 -->
+											<div name="mobilelabel_76" id="Screen1_mobilelabel_76" dsid="mobilelabel_76" data-role="appery_label"
+											class="Screen1_mobilelabel_76">
+												2
+											</div>
+										</div></td>
+										<!-- mobilegridcell_50 -->
+										<td id="Screen1_mobilegridcell_50" name="mobilegridcell_50" class="Screen1_mobilegridcell_50"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilelabel_90 -->
+											<div name="mobilelabel_90" id="Rank2" dsid="mobilelabel_90" data-role="appery_label"
+											class="Screen1_mobilelabel_90">
+												&nbsp;
+											</div>
+										</div></td>
+									</tr>
+									<tr class="Screen1_mobilegrid_16_row_3">
+										<!-- mobilegridcell_37 -->
+										<td id="Screen1_mobilegridcell_37" name="mobilegridcell_37" class="Screen1_mobilegridcell_37"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilelabel_77 -->
+											<div name="mobilelabel_77" id="Screen1_mobilelabel_77" dsid="mobilelabel_77" data-role="appery_label"
+											class="Screen1_mobilelabel_77">
+												3
+											</div>
+										</div></td>
+										<!-- mobilegridcell_53 -->
+										<td id="Screen1_mobilegridcell_53" name="mobilegridcell_53" class="Screen1_mobilegridcell_53"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilelabel_92 -->
+											<div name="mobilelabel_92" id="Rank3" dsid="mobilelabel_92" data-role="appery_label"
+											class="Screen1_mobilelabel_92">
+												&nbsp;
+											</div>
+										</div></td>
+									</tr>
+									<tr class="Screen1_mobilegrid_16_row_4">
+										<!-- mobilegridcell_38 -->
+										<td id="Screen1_mobilegridcell_38" name="mobilegridcell_38" class="Screen1_mobilegridcell_38"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilelabel_78 -->
+											<div name="mobilelabel_78" id="Screen1_mobilelabel_78" dsid="mobilelabel_78" data-role="appery_label"
+											class="Screen1_mobilelabel_78">
+												4
+											</div>
+										</div></td>
+										<!-- mobilegridcell_56 -->
+										<td id="Screen1_mobilegridcell_56" name="mobilegridcell_56" class="Screen1_mobilegridcell_56"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilelabel_94 -->
+											<div name="mobilelabel_94" id="Rank4" dsid="mobilelabel_94" data-role="appery_label"
+											class="Screen1_mobilelabel_94">
+												&nbsp;
+											</div>
+										</div></td>
+									</tr>
+									<tr class="Screen1_mobilegrid_16_row_5">
+										<!-- mobilegridcell_82 -->
+										<td id="Screen1_mobilegridcell_82" name="mobilegridcell_82" class="Screen1_mobilegridcell_82"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilelabel_79 -->
+											<div name="mobilelabel_79" id="Screen1_mobilelabel_79" dsid="mobilelabel_79" data-role="appery_label"
+											class="Screen1_mobilelabel_79">
+												5
+											</div>
+										</div></td>
+										<!-- mobilegridcell_83 -->
+										<td id="Screen1_mobilegridcell_83" name="mobilegridcell_83" class="Screen1_mobilegridcell_83"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilelabel_96 -->
+											<div name="mobilelabel_96" id="Rank5" dsid="mobilelabel_96" data-role="appery_label"
+											class="Screen1_mobilelabel_96">
+												&nbsp;
+											</div>
+										</div></td>
+									</tr>
+								</table>
+							</div>
+							<!-- mobilelabel_97 -->
+							<div name="mobilelabel_97" id="Screen1_mobilelabel_97" dsid="mobilelabel_97" data-role="appery_label"
+							class="Screen1_mobilelabel_97">
+								Mine
+							</div>
+							<!-- mobilegrid_98 -->
+							<div class="Screen1_mobilegrid_98_wrapper">
+								<table id="Screen1_mobilegrid_98" class="Screen1_mobilegrid_98" dsid="mobilegrid_98"
+								name="mobilegrid_98" cellpadding=0 cellspacing=0>
+									<col style="width:120px;" />
+									<col style="width:auto;" />
+									<tr class="Screen1_mobilegrid_98_row_0">
+										<!-- mobilegridcell_99 -->
+										<td id="Screen1_mobilegridcell_99" name="mobilegridcell_99" class="Screen1_mobilegridcell_99"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilelabel_107 -->
+											<div name="mobilelabel_107" id="myRank" dsid="mobilelabel_107"
+											data-role="appery_label" class="Screen1_mobilelabel_107">
+												&nbsp;
+											</div>
+										</div></td>
+										<!-- mobilegridcell_100 -->
+										<td id="Screen1_mobilegridcell_100" name="mobilegridcell_100" class="Screen1_mobilegridcell_100"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											<!-- mobilelabel_105 -->
+											<div name="mobilelabel_105" id="myScore" dsid="mobilelabel_105"
+											data-role="appery_label" class="Screen1_mobilelabel_105">
+												&nbsp;
+											</div>
+										</div></td>
+									</tr>
+									<!-- <tr class="Screen1_mobilegrid_98_row_0">
+										mobilegridcell_99
+										<td id="Screen1_mobilegridcell_99" name="mobilegridcell_99" class="Screen1_mobilegridcell_99"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											mobilelabel_107
+											<div name="mobilelabel_107" id="myRank1" dsid="mobilelabel_107"
+											data-role="appery_label" class="Screen1_mobilelabel_107">
+											<a id="Screen1_mobilelink_112"onclick="onclick=downloadFile('res/Pot24.apk')"name="mobilelink_112" dsid="mobilelink_112"
+                                        class="Screen1_mobilelink_112"  style="color:black">
+                                        学习版
+                                        </a>
+											</div>
+										</div></td>
+										mobilegridcell_100
+										<td id="Screen1_mobilegridcell_100" name="mobilegridcell_100" class="Screen1_mobilegridcell_100"
+										colspan=1 rowspan=1>
+										<div class="cell-wrapper">
+											mobilelabel_105
+											<div name="mobilelabel_105" id="myScore1" dsid="mobilelabel_105"
+											data-role="appery_label" class="Screen1_mobilelabel_105">
+											  <a id="Screen1_mobilelink_112"onclick="onclick=downloadFile('res/Pot25.apk')"name="mobilelink_112" dsid="mobilelink_112"
+                                        class="Screen1_mobilelink_112" style="color:black">
+                                        挑战版
+                                        </a>
+											</div>
+										</div></td>
+									</tr> -->
+								</table>
+							</div>
+
+						</section></td>
+
+						<td id="td3"align="center">
+						<section id="sectionright" >
+							<iframe name="right2"  src="right2.html"scrolling="no"
+							frameborder="0" width="320"height="320"></iframe>
+
+						</section></td>
+					</tr>
+					<tr id="tr2">
+						<td id="td4"align="center"></td>
+						<td id="td5"align="center">
+						<section id="sectiondown1"  >
+							<iframe name="down3" src="right2.html"scrolling="no"
+							frameborder="0" width="320"height="320"></iframe>
+
+						</section>
+						<section id="sectiondown2"  >
+							<iframe name="down4" src="down4.html"scrolling="no"
+							frameborder="0" width="620"height="320"></iframe>
+
+						</section></td>
+						<td id="td6"align="center"></td>
+					</tr>
+				</table>
+			</div>
+			<!-- mobilefooter -->
+			<div data-role="footer"  class="Screen1_mobilefooter" name="mobilefooter" data-position="fixed"
+			dsid="mobilefooter" id="Screen1_mobilefooter" data-theme="d">
+				<!-- mobilenavbar_138 -->
+				<div data-role="navbar" id="startScreen_mobilenavbar_138"
+				class="startScreen_mobilenavbar_138" data-theme="d" style="position: relative;">
+					<ul>
+						<!-- mobilenavbaritem_140 -->
+						<li>
+							<a onclick="window.location.href='start.html';"data-theme="d"  id="startScreen_mobilenavbaritem_140" >
+								start
+							</a>
+						</li>
+						<!-- mobilenavbaritem_141 -->
+						<li>
+							<a onclick="window.location.href='example.html';"data-theme="d" id="startScreen_mobilenavbaritem_141" >
+								rule
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="Screen1.js"></script>
+
+</html>

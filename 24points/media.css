@@ -1,0 +1,100 @@
+
+.widget {
+  	
+	background: #999;
+	margin: 0 0 5px;
+	padding: 10px 20px;
+	/* rounded corner */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	/* box shadow */
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+.widgetrank {
+  	
+	background: #98a;
+	margin: 0 0 5px;
+	padding: 14px 30px;
+	/* rounded corner */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	/* box shadow */
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+.widgetexample {
+  	
+	background: #DEDEDE;
+	margin: 0 0 5px;
+	padding: 10px 20px;
+	/* rounded corner */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	/* box shadow */
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+
+
+@media screen and (max-width: 600px) {
+
+           #col1,#col3, #td1,#td3,#td4,#td6,#sectiondown2{
+            	display: none;
+            }
+            
+            
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) and (orientation: landscape) {
+   #col3,#td3,#td4,#td5,#td6,#sectionleft1,#sectionright{
+            	display: none;
+            }
+            #sectionleft2{
+            	display: block;
+            }
+           
+     
+   
+}
+
+ @media screen  and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
+ 
+   #col1,#col3,#td1,#td3,#td4,#td6,#sectiondown1{
+            	display: none;
+            }
+  /*#tr1{
+            	height: 75%;
+            }
+              #tr2{
+            	height: 25%;
+            }*/
+}
+@media screen and (min-width: 1024px) {
+ 	#tr2,#sectionleft2{
+ 		display: none;
+ 	}
+
+/*#td1,#td3{
+	height:330px;
+	width:320px;
+}
+#sectionleft1{
+	height:330px;
+	width:320px;
+}
+#sectionright{
+	height:330px;
+	width:320px;
+}*/
+}
+
+
+
+
+
